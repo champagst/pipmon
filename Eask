@@ -14,7 +14,7 @@
 (source "gnu")
 (source "melpa")
 
-(depends-on "emacs" "26.1")
+(depends-on "emacs" "29.0")
 (depends-on "dash")
 (depends-on "pyvenv")
 

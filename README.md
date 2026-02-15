@@ -1,5 +1,7 @@
 pipmon is an emacs major mode for triggering and monitoring Gitlab pipelines.
 
+![pipmon buffer](https://raw.githubusercontent.com/champagst/pipmon/refs/heads/main/screenshot.PNG)
+
 # Configuration
 
 Connection parameters are configured in a yaml file, ~/.pipmon.yml
@@ -38,7 +40,7 @@ It's most conveniently used in a user defined function
 	      "DBT_MODEL" model))))
 ```
 
-which can be run using `(pipmon-run ``(ops/tbl "main" "model"))`, making a self-describing note for the pipeline that can be reran with `pipmon-rerun` as a form of `elisp--preceding-sexp`.
+which can be run using `(pipmon-run '(ops/tbl "main" "model"))`, making a self-describing note for the pipeline that can be reran with `pipmon-rerun` as a form of `elisp--preceding-sexp`.
 
 pipmon-pipeline-toggle - toggle visability of the jobs of a pipeline
 pipmon-delete-pipeline - delete the pipeline entry from the buffer, the pipeline itself is unaffected
